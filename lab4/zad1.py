@@ -4,6 +4,6 @@ def liczby_parzyste(n):
         yield liczba
         liczba += 2
 
-# Przykład użycia:
+
 gen = liczby_parzyste(5)
-print(list(gen))  # Wynik: [0, 2, 4, 6, 8]
+print(list(gen))
