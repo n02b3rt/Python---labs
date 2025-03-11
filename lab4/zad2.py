@@ -1,3 +1,8 @@
+"""
+2. Generator liczb Fibonacciego
+Napisz generator, który zwróci kolejne liczby Fibonacciego.
+"""
+
 def fibonacci():
     a, b = 0, 1
     while True:
