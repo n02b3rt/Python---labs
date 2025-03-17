@@ -1,3 +1,12 @@
+"""
+## Zadanie 2
+Strumieniowy zapis JSON Lines
+
+1. Wygenerować 1 tysiąc obiektów (np. symulowanych użytkowników).
+2. Zapisywać je w pliku `uzytkownicy.jsonl`, każdy obiekt w osobnej linii.
+3. Wczytywać linia po linii i zliczyć, ile rekordów ma powyżej np. 20 lat.
+    - Dzięki temu nie trzeba wszystkiego ładować do pamięci naraz.
+"""
 import json
 import random
 
@@ -5,7 +14,7 @@ import random
 def generuj_uzytkownikow(liczba):
     imiona = ["Jan", "Anna", "Piotr", "Maria", "Tomasz", "Katarzyna", "Marek", "Agnieszka"]
     nazwiska = ["Kowalski", "Nowak", "Wiśniewski", "Wójcik", "Kamiński", "Lewandowski"]
-    
+
     for _ in range(liczba):
         yield {
             "imie": random.choice(imiona),
